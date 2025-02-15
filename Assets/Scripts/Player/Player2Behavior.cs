@@ -1,11 +1,10 @@
 using UnityEngine;
 
-public class Player1Behavior : MonoBehaviour
-{
-    public KeyCode left = KeyCode.A;
-    public KeyCode right = KeyCode.D;
-    public KeyCode up = KeyCode.W;
-    public KeyCode down = KeyCode.S;
+public class Player2Behavior : MonoBehaviour
+{    public KeyCode left = KeyCode.LeftArrow;
+    public KeyCode right = KeyCode.RightArrow;
+    public KeyCode up = KeyCode.UpArrow;
+    public KeyCode down = KeyCode.DownArrow;
     private Rigidbody2D rb;
     public float speed = 5.0f;
     public float jump = 5.0f;
@@ -28,6 +27,7 @@ public class Player1Behavior : MonoBehaviour
     void Update()
     {
         internalTimer += Time.deltaTime;
+        //activates indicator if hearth is held
         if (isHoldingHeart)
         {
             heartIndicator.SetActive(true);
@@ -36,6 +36,7 @@ public class Player1Behavior : MonoBehaviour
         {
             heartIndicator.SetActive(false);
         }
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
 
