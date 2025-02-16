@@ -7,8 +7,10 @@ public class Player1Behavior : MonoBehaviour
     public KeyCode up = KeyCode.W;
     public KeyCode down = KeyCode.S;
     private Rigidbody2D rb;
-    public float speed = 5.0f;
-    public float jump = 5.0f;
+    public float speed;
+    public float currSpeed;
+    public float jump;
+    public float currJump;
     public Transform groundCheck;
     public bool isGrounded;
     public float groundCheckRadius;
@@ -18,16 +20,32 @@ public class Player1Behavior : MonoBehaviour
     public bool isHoldingHeart = false;
     public GameObject heartIndicator;
     public float internalTimer = 0.0f;
+    public float statsTimer = 0.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currSpeed = speed;
+        currJump = jump;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         internalTimer += Time.deltaTime;
+
+        if (currSpeed != speed || currJump != jump)
+        {
+            statsTimer += Time.deltaTime;
+            if (statsTimer > 3)
+            {
+                currSpeed = speed;
+                currJump = jump;
+                statsTimer = 0;
+            }
+        }
+
         if (isHoldingHeart)
         {
             heartIndicator.SetActive(true);
@@ -42,13 +60,13 @@ public class Player1Behavior : MonoBehaviour
         if (Input.GetKey(left))
         {
             //moves player left
-            rb.linearVelocityX = -speed;
+            rb.linearVelocityX = -currSpeed;
             //faces ghost left
             transform.rotation = Quaternion.Euler(0,180,0);
         } else if (Input.GetKey(right))
         {
             //moves player right
-            rb.linearVelocityX = speed;
+            rb.linearVelocityX = currSpeed;
             //faces ghost right
             transform.rotation = Quaternion.Euler(0,0,0);
         } else
@@ -59,7 +77,7 @@ public class Player1Behavior : MonoBehaviour
 
         if (Input.GetKeyDown(up) && isGrounded)
         {
-            rb.linearVelocityY = jump;
+            rb.linearVelocityY = currJump;
         }
     }
 
@@ -71,5 +89,15 @@ public class Player1Behavior : MonoBehaviour
     public void resetTimer()
     {
         internalTimer = 0.0f;
+    }
+
+    public void setSpeedMultiplier(float multiplier)
+    {
+        currSpeed = speed * multiplier;
+    }
+
+    public void setJumpMultiplier(float multiplier)
+    {
+        currJump = jump * multiplier;
     }
 }
