@@ -1933,6 +1933,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disappearTime: 5
+--- !u!1 &1515759694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515759695}
+  - component: {fileID: 1515759696}
+  m_Layer: 0
+  m_Name: PowerUp Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1515759695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515759694}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.89728093, y: -2.5802023, z: 0.032034144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1515759696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515759694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c2374841b0cd24292a11bc6ea78cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 5137504586922946144, guid: 771d5945f25befc47b7211dbd000d194, type: 3}
+  - {fileID: 5277814758201742387, guid: 52e9ceec30c4eeb479cd0c1197992ad8, type: 3}
+  - {fileID: 1349793634608952905, guid: a4406cdf6b7684640a23eb0bdba7b4b0, type: 3}
+  - {fileID: 1826649558426621894, guid: 8f48043c9b6d5364cb8886f86e4fb79e, type: 3}
 --- !u!1 &1618739103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,3 +3003,4 @@ SceneRoots:
   - {fileID: 1209737450}
   - {fileID: 1451956042}
   - {fileID: 24067071}
+  - {fileID: 1515759695}
