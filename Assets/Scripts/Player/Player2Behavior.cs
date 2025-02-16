@@ -1,10 +1,13 @@
 using UnityEngine;
 
 public class Player2Behavior : MonoBehaviour
-{    public KeyCode left = KeyCode.LeftArrow;
+{   
+    //Control Variables
+    public KeyCode left = KeyCode.LeftArrow;
     public KeyCode right = KeyCode.RightArrow;
     public KeyCode up = KeyCode.UpArrow;
     public KeyCode down = KeyCode.DownArrow;
+    //Physics Variables
     private Rigidbody2D rb;
     public float speed;
     public float currSpeed;
@@ -20,12 +23,19 @@ public class Player2Behavior : MonoBehaviour
     public GameObject heartIndicator;
     public float internalTimer = 0.0f;
     public float statsTimer = 0.0f;
+    //Player Reference
+    public GameObject otherPlayer;
+    //Out of Bounds Variables
+    public float outOfBoundsY = -6.0f;
+    private float respawnTimer = 0.0f;
+    public float respawnInterval = 3.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currSpeed = speed;
         currJump = jump;
+        otherPlayer = GameObject.Find("Player 1");
     }
 
     // Update is called once per frame
@@ -57,7 +67,7 @@ public class Player2Behavior : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-
+        //Player Movement
         if (Input.GetKey(left))
         {
             //moves player left
@@ -80,6 +90,22 @@ public class Player2Behavior : MonoBehaviour
         {
             rb.linearVelocityY = currJump;
         }
+
+        //Checks if out of bounds
+        if (transform.position.y < outOfBoundsY)
+        {
+            if (isHoldingHeart)
+            {
+                isHoldingHeart = false;
+                otherPlayer.GetComponent<Player1Behavior>().setHeart(true);
+            }
+            respawnTimer += Time.deltaTime;
+            if (respawnTimer > respawnInterval)
+            {
+                transform.position = new Vector3(0,1,0);
+                respawnTimer = 0;
+            }
+        } 
     }
 
     public void setHeart(bool isHoldingHeart)

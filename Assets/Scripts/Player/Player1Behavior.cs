@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class Player1Behavior : MonoBehaviour
 {
+    //Control variables
     public KeyCode left = KeyCode.A;
     public KeyCode right = KeyCode.D;
     public KeyCode up = KeyCode.W;
     public KeyCode down = KeyCode.S;
+
+    //Physics Variables
     private Rigidbody2D rb;
     public float speed;
     public float currSpeed;
@@ -21,12 +24,23 @@ public class Player1Behavior : MonoBehaviour
     public GameObject heartIndicator;
     public float internalTimer = 0.0f;
     public float statsTimer = 0.0f;
+
+    //Player Reference
+    public GameObject otherPlayer;
+
+    //Out of Bounds Variables
+    public float outOfBoundsY = -6.0f;
+    private float respawnTimer = 0.0f;
+    public float respawnInterval = 3.0f;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currSpeed = speed;
         currJump = jump;
+        otherPlayer = GameObject.Find("Player 2");
 
     }
 
@@ -79,6 +93,22 @@ public class Player1Behavior : MonoBehaviour
         {
             rb.linearVelocityY = currJump;
         }
+
+        //Checks if out of bounds
+        if (transform.position.y < outOfBoundsY)
+        {
+            if (isHoldingHeart)
+            {
+                isHoldingHeart = false;
+                otherPlayer.GetComponent<Player2Behavior>().setHeart(true);
+            }
+            respawnTimer += Time.deltaTime;
+            if (respawnTimer > respawnInterval)
+            {
+                transform.position = new Vector3(0,1,0);
+                respawnTimer = 0;
+            }
+        } 
     }
 
     public void setHeart(bool isHoldingHeart)
