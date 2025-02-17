@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 24067068}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19400834, y: 1.69, z: 0}
+  m_LocalPosition: {x: 0.08, y: 1.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1300,6 +1300,8 @@ GameObject:
   - component: {fileID: 1209737448}
   - component: {fileID: 1209737447}
   - component: {fileID: 1209737451}
+  - component: {fileID: 1209737452}
+  - component: {fileID: 1209737453}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Player
@@ -1372,7 +1374,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.21}
+    oldSize: {x: 0.14, y: 0.23}
     newSize: {x: 0.14, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1425,7 +1427,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1483407423975865499, guid: 563d8fd52a2715944ac21924afbca844, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.081131995, g: 0.94631034, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1483,9 +1485,45 @@ MonoBehaviour:
   heartIndicator: {fileID: 464886435}
   internalTimer: 0
   statsTimer: 0
-  otherPlayer: {fileID: 0}
+  otherPlayer: {fileID: 1451956038}
+  player: {fileID: 1209737446}
   outOfBoundsY: -6
   respawnInterval: 3
+--- !u!95 &1209737452
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209737446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a0e4ac69954e0c44866fae39e22099d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1209737453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209737446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9b0405b8a51af4f94a60ebe785c596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1209737452}
 --- !u!1 &1328525248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1638,7 @@ GameObject:
   - component: {fileID: 1451956040}
   - component: {fileID: 1451956039}
   - component: {fileID: 1451956043}
+  - component: {fileID: 1451956044}
   m_Layer: 6
   m_Name: Player 2
   m_TagString: Player
@@ -1645,7 +1684,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.21}
+    oldSize: {x: 0.14, y: 0.22}
     newSize: {x: 0.14, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1725,7 +1764,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 617216950265807235, guid: 563d8fd52a2715944ac21924afbca844, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8867924, g: 0.48689917, b: 0.8324662, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1785,6 +1824,28 @@ MonoBehaviour:
   otherPlayer: {fileID: 0}
   outOfBoundsY: -6
   respawnInterval: 3
+--- !u!95 &1451956044
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451956038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce26d20a75b7b8b40bfa59e6ebb66b0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1464626659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +2043,11 @@ MonoBehaviour:
   - {fileID: 5277814758201742387, guid: 52e9ceec30c4eeb479cd0c1197992ad8, type: 3}
   - {fileID: 1349793634608952905, guid: a4406cdf6b7684640a23eb0bdba7b4b0, type: 3}
   - {fileID: 1826649558426621894, guid: 8f48043c9b6d5364cb8886f86e4fb79e, type: 3}
+  startTime: 8
+  spawnRate: 5.5
+  spawnLimitPosY: 1
+  spawnLimitNegY: -2
+  spawnLimitX: 7
 --- !u!1 &1618739103
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,6 +27,7 @@ public class Player1Behavior : MonoBehaviour
 
     //Player Reference
     public GameObject otherPlayer;
+    public GameObject player;
 
     //Out of Bounds Variables
     public float outOfBoundsY = -6.0f;
@@ -77,6 +78,7 @@ public class Player1Behavior : MonoBehaviour
             rb.linearVelocityX = -currSpeed;
             //faces ghost left
             transform.rotation = Quaternion.Euler(0,180,0);
+            player.GetComponent<Player1Animation>().player2GotHeart();
         } else if (Input.GetKey(right))
         {
             //moves player right

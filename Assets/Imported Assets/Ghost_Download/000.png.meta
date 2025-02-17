@@ -271,11 +271,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 228
+        y: 226
         width: 14
-        height: 21
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,11 +293,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 41
-        y: 227
+        y: 226
         width: 14
-        height: 21
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,7 +319,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_3
+      name: dis1
       rect:
         serializedVersion: 2
         x: 105
@@ -341,7 +341,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -355,15 +355,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_4
+      name: dis9
       rect:
         serializedVersion: 2
-        x: 140
-        y: 235
-        width: 8
-        height: 10
+        x: 137
+        y: 228
+        width: 14
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -385,7 +385,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,15 +399,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_6
+      name: pinkDis1
       rect:
         serializedVersion: 2
         x: 201
-        y: 227
+        y: 228
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -421,7 +421,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_7
+      name: pinkDis9
       rect:
         serializedVersion: 2
         x: 236
@@ -429,7 +429,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -451,7 +451,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -473,7 +473,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -495,7 +495,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -509,7 +509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_11
+      name: dis2
       rect:
         serializedVersion: 2
         x: 105
@@ -517,7 +517,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,15 +531,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_12
+      name: dis10
       rect:
         serializedVersion: 2
-        x: 140
-        y: 204
-        width: 8
-        height: 7
+        x: 139
+        y: 196
+        width: 12
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -561,7 +561,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -575,7 +575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_14
+      name: pinkDis2
       rect:
         serializedVersion: 2
         x: 201
@@ -583,7 +583,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -597,7 +597,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_15
+      name: pinkDis10
       rect:
         serializedVersion: 2
         x: 236
@@ -605,7 +605,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -623,11 +623,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 164
+        y: 163
         width: 14
-        height: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -647,9 +647,9 @@ TextureImporter:
         x: 41
         y: 163
         width: 14
-        height: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -671,7 +671,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -685,7 +685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_19
+      name: dis3
       rect:
         serializedVersion: 2
         x: 105
@@ -693,7 +693,7 @@ TextureImporter:
         width: 15
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -707,15 +707,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_20
+      name: dis11
       rect:
         serializedVersion: 2
-        x: 141
-        y: 140
-        width: 42
-        height: 44
+        x: 137
+        y: 161
+        width: 15
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -729,15 +729,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_21
+      name: pinkDis3
       rect:
         serializedVersion: 2
         x: 201
-        y: 140
-        width: 43
-        height: 44
+        y: 161
+        width: 18
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -759,7 +759,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -781,7 +781,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -803,7 +803,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -817,7 +817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_25
+      name: dis4
       rect:
         serializedVersion: 2
         x: 103
@@ -825,7 +825,7 @@ TextureImporter:
         width: 18
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -847,7 +847,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -861,7 +861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_27
+      name: pinkDis4
       rect:
         serializedVersion: 2
         x: 199
@@ -869,7 +869,7 @@ TextureImporter:
         width: 18
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -883,7 +883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_28
+      name: oppGotHeart1
       rect:
         serializedVersion: 2
         x: 9
@@ -891,7 +891,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -905,7 +905,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_29
+      name: oppGotHeart3
       rect:
         serializedVersion: 2
         x: 41
@@ -913,7 +913,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -935,7 +935,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -949,15 +949,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_31
+      name: dis5
       rect:
         serializedVersion: 2
         x: 103
         y: 99
-        width: 43
+        width: 20
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -979,7 +979,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -993,15 +993,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_33
+      name: pinkDis5
       rect:
         serializedVersion: 2
-        x: 199
+        x: 200
         y: 99
-        width: 43
+        width: 21
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1015,15 +1015,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_34
+      name: pinkIdle1
       rect:
         serializedVersion: 2
         x: 9
-        y: 68
+        y: 67
         width: 14
-        height: 21
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1037,7 +1037,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_35
+      name: oppGotHeart2,4
       rect:
         serializedVersion: 2
         x: 41
@@ -1045,7 +1045,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1067,7 +1067,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1081,7 +1081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_37
+      name: dis6
       rect:
         serializedVersion: 2
         x: 101
@@ -1089,7 +1089,7 @@ TextureImporter:
         width: 22
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1111,7 +1111,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1125,7 +1125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_39
+      name: pinkDis6
       rect:
         serializedVersion: 2
         x: 197
@@ -1133,7 +1133,7 @@ TextureImporter:
         width: 22
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1155,7 +1155,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1169,7 +1169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_41
+      name: dis7
       rect:
         serializedVersion: 2
         x: 104
@@ -1177,7 +1177,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1199,7 +1199,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1213,7 +1213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_43
+      name: pinkDis7
       rect:
         serializedVersion: 2
         x: 200
@@ -1221,7 +1221,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1243,7 +1243,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1257,7 +1257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_45
+      name: dis8
       rect:
         serializedVersion: 2
         x: 107
@@ -1265,7 +1265,7 @@ TextureImporter:
         width: 9
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1287,7 +1287,7 @@ TextureImporter:
         width: 14
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1301,7 +1301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 000_47
+      name: pinkDis8
       rect:
         serializedVersion: 2
         x: 203
@@ -1309,7 +1309,7 @@ TextureImporter:
         width: 9
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1322,11 +1322,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dis12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 128
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72222ef74c9c174b90852a394348611
+      internalID: -2126612105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: empty
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 66
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a878727898dc64740b09c9d3755bf2cb
+      internalID: -1140929052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinkIdle2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 69
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4942c28c60da0534298dee18a1200daa
+      internalID: 650747762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2dff469519f0e8848b0efee1e66c5c80
     internalID: 0
     vertices: []
     indices: 
@@ -1335,7 +1401,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dis1: 7882434806325108488
+      dis10: 8039859249078408523
+      dis11: -7953192875883925829
+      dis12: -2126612105
+      dis2: -9176192836783076439
+      dis3: -2529097254022373850
+      dis4: -7337176555811640439
+      dis5: -2468372765071338133
+      dis6: -4741748943190403653
+      dis7: 1858135784295463456
+      dis8: -2047976292940894830
+      dis9: 4546670030829431364
+      empty: -1140929052
+      oppGotHeart1: -336903218611762380
+      oppGotHeart2,4: 8542370230756837630
+      oppGotHeart3: 5707355241593521378
+      pinkDis1: -3502364514010785227
+      pinkDis10: 709985853020452890
+      pinkDis2: 3964751777764273693
+      pinkDis3: -6936234734478842905
+      pinkDis4: -1058006771470806076
+      pinkDis5: 4890648318044211441
+      pinkDis6: -4398159425596120585
+      pinkDis7: -5302445494367106732
+      pinkDis8: -6776866732036787504
+      pinkDis9: 4410942440804225118
+      pinkIdle1: 617216950265807235
+      pinkIdle2: 650747762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
