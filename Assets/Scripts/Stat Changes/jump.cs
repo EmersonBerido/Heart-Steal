@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class jump : MonoBehaviour
@@ -14,8 +15,9 @@ public class jump : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == GameObject.Find("Player 1"))
+        if (other.gameObject == GameObject.Find("trigger1") || other.gameObject == player1)
         {
+            Debug.Log(other.name);
             if (isBoost)
             {
                 //increases jump of player
@@ -30,7 +32,7 @@ public class jump : MonoBehaviour
         } 
         else
         {
-            Debug.Log("else reac");
+
             if (isBoost)
             {
                 //increases jump of player

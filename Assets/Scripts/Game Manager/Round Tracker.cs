@@ -2,26 +2,40 @@ using UnityEngine;
 
 public class RoundTracker : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject roundDoneScreen;
+    public GameObject gameDoneScreen;
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Player1Score") >= 2)
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            //resets scores
-            PlayerPrefs.SetInt("Player1Score", 0);
-            //TODO Player 1 wins
+            Debug.Log("player 1 score" + PlayerPrefs.GetInt("Player1Win"));
+            Debug.Log("player 2 score" + PlayerPrefs.GetInt("Player2Win"));
         }
-        else if (PlayerPrefs.GetInt("Player2Score") >= 2)
+        if (PlayerPrefs.GetInt("Player1Win") >= 2)
         {
             //resets scores
-            PlayerPrefs.SetInt("Player2Score", 0);
-            //TODO Player 2 wins
+            PlayerPrefs.SetInt("Player1Win", 0);
+            PlayerPrefs.SetInt("Player2Win", 0);
+        }
+        else if (PlayerPrefs.GetInt("Player2Win") >= 2)
+        {
+            //resets scores
+            PlayerPrefs.SetInt("Player1Win", 0);
+            PlayerPrefs.SetInt("Player2Win", 0);
+        } 
+    }
+    
+    public void TimerDone()
+    {
+        if (PlayerPrefs.GetInt("Player1Win") >= 2 || PlayerPrefs.GetInt("Player2Win") >= 2)
+        {
+            gameDoneScreen.SetActive(true);
+            //gameDoneScreen.SetActive(true); create another game done screen for each player
+        } else
+        {
+            roundDoneScreen.SetActive(true);
         }
     }
 }

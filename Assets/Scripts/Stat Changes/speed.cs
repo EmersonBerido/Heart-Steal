@@ -14,7 +14,7 @@ public class speed : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == GameObject.Find("Player 1"))
+        if (other.gameObject == GameObject.Find("trigger1") || other.gameObject == player1)
         {
             Debug.Log("if reached");
             if (isBoost)
