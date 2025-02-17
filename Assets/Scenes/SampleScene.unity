@@ -1301,7 +1301,6 @@ GameObject:
   - component: {fileID: 1209737447}
   - component: {fileID: 1209737451}
   - component: {fileID: 1209737452}
-  - component: {fileID: 1209737453}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Player
@@ -1486,7 +1485,6 @@ MonoBehaviour:
   internalTimer: 0
   statsTimer: 0
   otherPlayer: {fileID: 1451956038}
-  player: {fileID: 1209737446}
   outOfBoundsY: -6
   respawnInterval: 3
 --- !u!95 &1209737452
@@ -1511,19 +1509,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1209737453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209737446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9b0405b8a51af4f94a60ebe785c596, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1209737452}
 --- !u!1 &1328525248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,7 +2089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1790155763}
   time: 45
-  startTime: 3
+  iscCountdownDone: 0
 --- !u!114 &1618739106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,6 +2170,7 @@ MonoBehaviour:
   time: 3
   player1: {fileID: 1209737446}
   player2: {fileID: 1451956038}
+  GameTimer: {fileID: 1618739103}
 --- !u!1 &1659088417
 GameObject:
   m_ObjectHideFlags: 0

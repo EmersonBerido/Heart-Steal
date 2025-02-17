@@ -8,6 +8,7 @@ public class CountDown : MonoBehaviour
     public float time;
     public GameObject player1;
     public GameObject player2;
+    public GameObject GameTimer;
 
     void Start()
     {
@@ -23,12 +24,16 @@ public class CountDown : MonoBehaviour
         
         time -= Time.deltaTime;
         int seconds = Mathf.FloorToInt(time % 60);
+
+
+
         timerText.text = string.Format("{0:0}", seconds, time);
         if (seconds < 0)
         {
             player1.GetComponent<Player1Behavior>().enabled = true;
             player2.GetComponent<Player2Behavior>().enabled = true;
 
+            GameTimer.GetComponent<Timer>().startTimer();
             timerTextRef.SetActive(false);
         }
     }
