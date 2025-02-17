@@ -127,4 +127,12 @@ public class Player2Behavior : MonoBehaviour
     {
         currJump = jump * multiplier;
     }
+
+    public void player2RoundDone()
+    {
+        if (isHoldingHeart)
+        {
+            PlayerPrefs.SetInt("Player2Win", PlayerPrefs.GetInt("Player2Win") + 1);
+        }
+    }
 }
