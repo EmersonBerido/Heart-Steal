@@ -4,7 +4,7 @@ public class PlayerSpawner : MonoBehaviour
 {
     SpriteRenderer rend;
     public float disappearTime = 2.0f;
-    private float timer = 0.0f;
+    private bool isDisappearing = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +14,7 @@ public class PlayerSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > 2.5)
+        if (isDisappearing)
         {
             rend.color = new Color(rend.color.r, rend.color.g, rend.color.b, rend.color.a - Time.deltaTime * disappearTime);
         }
@@ -23,5 +22,9 @@ public class PlayerSpawner : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+    public void disappear()
+    {
+        isDisappearing = true;
     }
 }

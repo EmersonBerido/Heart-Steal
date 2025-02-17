@@ -2168,9 +2168,12 @@ MonoBehaviour:
   timerText: {fileID: 1159465680}
   timerTextRef: {fileID: 1159465678}
   time: 3
+  startDelay: 1
   player1: {fileID: 1209737446}
   player2: {fileID: 1451956038}
   GameTimer: {fileID: 1618739103}
+  spawn1: {fileID: 1881331119}
+  spawn2: {fileID: 1464626659}
 --- !u!1 &1659088417
 GameObject:
   m_ObjectHideFlags: 0
