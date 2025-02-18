@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1790155763}
-  time: 8
+  time: 45
   isCountdownDone: 0
   player1: {fileID: 1209737446}
   player2: {fileID: 1451956038}
