@@ -102,7 +102,7 @@ public class Player2Behavior : MonoBehaviour
             respawnTimer += Time.deltaTime;
             if (respawnTimer > respawnInterval)
             {
-                transform.position = new Vector3(0,1,0);
+                transform.position = new Vector3(0,1.5f,0);
                 respawnTimer = 0;
             }
         } 
