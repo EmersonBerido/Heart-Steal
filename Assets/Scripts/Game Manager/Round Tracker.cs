@@ -4,6 +4,20 @@ public class RoundTracker : MonoBehaviour
 {
     public GameObject roundDoneScreen;
     public GameObject gameDoneScreen;
+    public GameObject player1OneWin;
+    public GameObject player2OneWin;
+
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("Player1Win") == 1)
+        {
+            player1OneWin.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Player2Win") == 1)
+        {
+            player2OneWin.SetActive(true);
+        }
+    }
 
     // Update is called once per frame
     void Update()
