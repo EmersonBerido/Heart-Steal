@@ -95,6 +95,8 @@ public class Player1Behavior : MonoBehaviour
             rb.linearVelocityY = currJump;
         }
 
+        transform.rotation = Quaternion.Euler(0,transform.rotation.eulerAngles.y,0);
+
         //Checks if out of bounds
         if (transform.position.y < outOfBoundsY)
         {
