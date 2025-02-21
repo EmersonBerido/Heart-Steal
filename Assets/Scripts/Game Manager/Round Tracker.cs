@@ -3,7 +3,8 @@ using UnityEngine;
 public class RoundTracker : MonoBehaviour
 {
     public GameObject roundDoneScreen;
-    public GameObject gameDoneScreen;
+    public GameObject gameDoneScreenP1;
+    public GameObject gameDoneScreenP2;
     public GameObject player1OneWin;
     public GameObject player2OneWin;
 
@@ -43,10 +44,13 @@ public class RoundTracker : MonoBehaviour
     
     public void TimerDone()
     {
-        if (PlayerPrefs.GetInt("Player1Win") >= 2 || PlayerPrefs.GetInt("Player2Win") >= 2)
+        if (PlayerPrefs.GetInt("Player1Win") >= 2)
         {
-            gameDoneScreen.SetActive(true);
+            gameDoneScreenP1.SetActive(true);
             //gameDoneScreen.SetActive(true); create another game done screen for each player
+        } else if(PlayerPrefs.GetInt("Player2Win") >= 2)
+        {
+            gameDoneScreenP2.SetActive(true);
         } else
         {
             roundDoneScreen.SetActive(true);
